@@ -84,6 +84,7 @@ if (isset($_POST['update_profile'])) {
         </ol>
         <?php include '../includes/sessions.php'; ?>
     
+        
     <div class="row">
  <!-- Form Group (username)-->
     <?php 
