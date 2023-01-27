@@ -47,7 +47,7 @@ include('./admin_inc/authentication.php');
                             <tbody>
                             <?php 
                             $serial_no = 1;
-                            //$query = "SELECT * FROM post ";
+                            // $query = "SELECT * FROM post ";
                             // Fetch categories associated with posts
                             $query = "SELECT post.*, categories.cat_title
                                         FROM post, categories

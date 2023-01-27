@@ -124,7 +124,7 @@
                                 <div class="card mb-5">
                         <div class="card-header p-0 position-relative">
                             <a href="single-post.php?postid=<?=$rows['post_id'];?>" >
-                                <img class="card-img-bottom" src="images/banner.jpg" alt="Card image cap">
+                                <img class="card-img-bottom" src="images/<?= $rows['post_image']; ?>" alt="Card image cap">
                                 <span class="post-icon bg-theme1"><?= $rows['cat_title']; ?></span>
 
                             </a>

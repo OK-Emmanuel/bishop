@@ -15,7 +15,7 @@ if (isset($_POST['update_profile'])) {
    // Check image extension if it's original image
    $image_extension = pathinfo($admin_image, PATHINFO_EXTENSION);
    // Rename Image
-   $filename = $admin_name . " - administrator-bishop-oyedola-website." . $image_extension;
+   $filename = $admin_name . " - administrator-bishop-oyedola-website" . date('h:i:s'). '.'  . $image_extension;
 
    // Update Profile Pciture if New Picture was uploaded
    if (!empty($admin_image)) {
@@ -44,7 +44,7 @@ if (isset($_POST['update_profile'])) {
     }
     
     // Retain Existing Picture if No Picture was Uploaded
-    elseif (($admin_image)) {
+    elseif ($admin_image) {
         $query = "UPDATE administrators SET 
         admin_name='$admin_name',
         admin_username = '$admin_username',
@@ -97,6 +97,7 @@ if (isset($_POST['update_profile'])) {
             <!-- Profile picture card-->
             <div class="card mb-4 mb-xl-0 shadow">
                 <div class="card-header">Profile Picture</div>
+              
                 <div class="card-body text-center">
                       <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" enctype="multipart/form-data">
                     <!-- Profile picture image-->
@@ -135,7 +136,7 @@ if (isset($_POST['update_profile'])) {
                         <!-- Form Group (email address)-->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input class="form-control" id="inputEmailAddress" type="email" name="new_mail" value="<?= $rows['admin_email'] ;?>" placeholder="Enter your email address" value="<?= $rows['admin_email'] ;?>">
+                            <input class="form-control" id="inputEmailAddress" type="email" name="new_email" value="<?= $rows['admin_email'] ;?>" placeholder="Enter your email address" value="<?= $rows['admin_email'] ;?>">
                         </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOrgName">Only Admin can edit role</label>
