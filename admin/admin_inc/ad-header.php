@@ -17,6 +17,7 @@ include '../includes/db.php';?>
         textarea{resize: none;}
         </style>
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
     </head>
 
     <body class="sb-nav-fixed">
