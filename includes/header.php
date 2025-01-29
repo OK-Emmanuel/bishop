@@ -11,7 +11,9 @@ $Page = $_SERVER['PHP_SELF'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="images/bishop.ico" type="image/x-icon">
-    <meta name="keywords" content="Bishop OJ Oyedola, Rich Pastors, Ministers to Ministers, Christ House International" />
+    <meta name="keywords" content="Bishop OJ Oyedola, Ministers to Ministers, Christ House International" />
+    <meta content="Olawuni Emmanuel Kayode - OK Emmanuel, Techifice" name="author">
+ 
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -21,15 +23,48 @@ $Page = $_SERVER['PHP_SELF'];
             window.scrollTo(0, 1);
         }
     </script>
+
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
     <!-- font-awesome icons -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- // AOS file -->
+    <!-- AOS file -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   
+
+    <!-- Structured Data for Organization & Developer -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bishop OJ Oyedola",
+        "url": "https://bishopojoyedola.com",
+        "description": "Official website of Bishop OJ Oyedola, featuring ministry insights, teachings, and outreach programs.",
+        "publisher": {
+            "@type": "Person",
+            "name": "Bishop OJ Oyedola",
+            "url": "https://bishopojoyedola.com"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Olawuni Emmanuel Kayode",
+            "url": "https://okemmanuel.com",
+            "sameAs": [
+                "https://www.linkedin.com/in/olawuni-emmanuel-kayode",
+                "https://github.com/OK-Emmanuel",
+                "https://twitter.com/@olawuniemmanuel"
+            ]
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Techifice",
+            "url": "https://techifice.com",
+            "logo": "https://techifice.com/logo.png"
+        }
+    }
+    </script>
 </head>
+
 
 <body>
     <!-- inner banner -->

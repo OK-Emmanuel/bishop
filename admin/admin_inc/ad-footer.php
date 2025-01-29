@@ -2,7 +2,7 @@
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted"><?= date('Y'); ?> Bishop O.J. Oyedola  All rights reserved <br>
-         Designed by <a href="https://www.kundossolutions.com">Kundos Solutions.</a></div>
+         Designed by <a href="https://okemmanuel.com">Olawuni Emmanuel K.</a> || <a href="https://techifice.com">Techifice</a></div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;

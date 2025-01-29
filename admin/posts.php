@@ -4,15 +4,30 @@ include('../includes/db.php');
 include('./admin_inc/authentication.php'); 
 
 
-    if (isset($_GET['del-post'])) {
-          $PostDrop = $_GET['del-post'];  
-          $sql = "DELETE FROM post WHERE post_id = '$PostDrop'";
-          $sql_execute = mysqli_query($connection, $sql);
-          if ($sql_execute) {
-             $_SESSION['ErrorMessage'] = "Post Deleted Successfully";
-             header("Location: posts.php");
-          }
+if (isset($_GET['del-post'])) {
+    $PostDrop = $_GET['del-post'];
+
+    // Get the image filename associated with the post
+    $query = "SELECT post_image FROM post WHERE post_id = '$PostDrop'";
+    $query_run = mysqli_query($connection, $query);
+    $post_image = mysqli_fetch_assoc($query_run)['post_image'];
+
+    // Delete the post from the database
+    $sql = "DELETE FROM post WHERE post_id = '$PostDrop'";
+    $sql_execute = mysqli_query($connection, $sql);
+
+    // If the post is deleted, delete the image as well
+    if ($sql_execute) {
+        // Delete the image from the server
+        if (file_exists("../images/" . $post_image)) {
+            unlink("../images/" . $post_image);
+        }
+
+        $_SESSION['ErrorMessage'] = "Post Deleted Successfully";
+        header("Location: posts.php");
     }
+}
+
 
 ?>
 <?php include('admin_inc/ad-header.php'); ?>

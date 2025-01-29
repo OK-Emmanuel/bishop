@@ -7,10 +7,14 @@ include('./admin_inc/authentication.php');
 // Time to handle form processes
 if (isset($_POST['add_post'])) {
     // Get form inputs
-   $post_title = $_POST['post_name'];
-   $post_slug = $_POST['post_slug'];
-   $post_content = $_POST['post_content'];
-   $post_category = $_POST['post_category'];
+    $post_title = mysqli_real_escape_string($connection, $_POST['post_name']);
+    $post_slug = mysqli_real_escape_string($connection, $_POST['post_slug']);
+    $post_content = mysqli_real_escape_string($connection, $_POST['post_content']);
+    $post_category = mysqli_real_escape_string($connection, $_POST['post_category']);
+    $meta_title = mysqli_real_escape_string($connection, $_POST['meta_title']);
+    $meta_keywords = mysqli_real_escape_string($connection, $_POST['meta_keywords']);
+    $meta_description = mysqli_real_escape_string($connection, $_POST['meta_description']);
+    $author = mysqli_real_escape_string($connection, $_POST['author']);
 
 
    $meta_title = $_POST['meta_title'];

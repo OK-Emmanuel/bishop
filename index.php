@@ -3,11 +3,13 @@
 <html lang="eng">
 
 <head>
-    <title>Bishop Oyedola Website</title>
+    <title>Bishop Oyedola || Christ House International </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="Bishop OJ Oyedola, Minister to Minister, Christ House International" />
-    <script>
+    <meta content="Olawuni Emmanuel Kayode - OK Emmanuel, Techifice" name="author">
+
+   <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
         }, false);

@@ -1,5 +1,5 @@
 <!-- footer -->
-    <footer class="footer py-md-5 pt-md-3 pb-sm-5" data-aos="fade-up" data-aos-duration="1800">
+    <footer class="footer py-md-5 pt-md-3 pb-sm-5" data-aos-duration="1800">
         <div class="container-fluid">
             <div class="row p-sm-4 px-3 py-5">
                 <div class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
@@ -97,7 +97,7 @@
     <!-- copyright -->
     <div class="cpy-right text-center bg-theme">
         <p class="text-white">&copy; <?= date('Y'); ?> Bishop O.J. Oyedola  All rights reserved <br>
-         Designed by <a href="https://www.kundossolutions.com">Kundos Solutions.</a>
+         Designed by <a href="https://okemmanuel.com">Olawuni Emmanuel K</a> || <a href="https://www.techifice.com">OK Emmanuel.</a>
         </p>
     </div>
     <!-- //copyright -->   
